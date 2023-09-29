@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+  
+  <ion-item-sliding *ngFor="let listesCourse of listesCourses"> 
+  <ion-item>
+  <ion-icon slot="start" name="basket"> </ion-icon>
+  <ion-label>{{listesCourse.nom}} {{listesCourse.etat}}</ion-label>
+  <ion-buttons slot="end">
+  <ion-button >
+  <ion-icon slot="icon-only" name="ellipsis-horizontal-outline"></ion-icon>
+  </ion-button>
+  </ion-buttons>
+  </ion-item> 
+  <ion-item-options side="end"> <ion-item-option  color="danger">Delete </ion-item-option> </ion-item-options>
+  </ion-item-sliding>
+  </ion-list> 
+ </ion-content>

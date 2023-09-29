@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="/instants"></ion-back-button>
+    </ion-buttons>
+      <ion-title>Ajout liste courses</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Titre"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input  placeholder="Entrez le nom de l'article"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input placeholder="Quantité" type="number"></ion-input>
+    </ion-item>
+
+     
+			<!--  <ion-col *ngFor="let photo of article.photos; index as position">
+				<ion-img [src]="photo.webviewPath"></ion-img>
+			</ion-col>
+		  -->
+  
+   
+  </ion-list>
+ 
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+		<ion-fab-button (click)="addPhotoToGallery()">
+			<ion-icon name="camera"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+
+
+
+ 
+</ion-content>
